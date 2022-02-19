@@ -1,0 +1,14 @@
+C:\Users\bryce\source\repos\classesMethods\bin\Debug\netcoreapp3.1\classesMethods.exe
+C:\Users\bryce\source\repos\classesMethods\bin\Debug\netcoreapp3.1\classesMethods.deps.json
+C:\Users\bryce\source\repos\classesMethods\bin\Debug\netcoreapp3.1\classesMethods.runtimeconfig.json
+C:\Users\bryce\source\repos\classesMethods\bin\Debug\netcoreapp3.1\classesMethods.runtimeconfig.dev.json
+C:\Users\bryce\source\repos\classesMethods\bin\Debug\netcoreapp3.1\classesMethods.dll
+C:\Users\bryce\source\repos\classesMethods\bin\Debug\netcoreapp3.1\classesMethods.pdb
+C:\Users\bryce\source\repos\classesMethods\obj\Debug\netcoreapp3.1\classesMethods.csproj.AssemblyReference.cache
+C:\Users\bryce\source\repos\classesMethods\obj\Debug\netcoreapp3.1\classesMethods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bryce\source\repos\classesMethods\obj\Debug\netcoreapp3.1\classesMethods.AssemblyInfoInputs.cache
+C:\Users\bryce\source\repos\classesMethods\obj\Debug\netcoreapp3.1\classesMethods.AssemblyInfo.cs
+C:\Users\bryce\source\repos\classesMethods\obj\Debug\netcoreapp3.1\classesMethods.csproj.CoreCompileInputs.cache
+C:\Users\bryce\source\repos\classesMethods\obj\Debug\netcoreapp3.1\classesMethods.dll
+C:\Users\bryce\source\repos\classesMethods\obj\Debug\netcoreapp3.1\classesMethods.pdb
+C:\Users\bryce\source\repos\classesMethods\obj\Debug\netcoreapp3.1\classesMethods.genruntimeconfig.cache
