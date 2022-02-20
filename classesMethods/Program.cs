@@ -5,20 +5,25 @@ namespace classesMethods
 
     class Program
     {
-
-        public static Random random;
+       public static Random random;
+        
         static void Main(string[] args)//main
-        {
-            Rectangle r = new Rectangle();
-
-           
-          
-
-            Console.WriteLine(r.Height);
-            Console.WriteLine(r.Width);
-
-           
+        { 
+            random = new Random(); // makes an instance of the random function allows the use of random # generator
+            Rectangle r = new Rectangle(); // creates an instance of rectangle allows the use of variables width + height
             
+            int min = 0; // controls the minimum amount the random generator can choose from
+            int max = 100; // sets the maximum amount the random generator can choose from
+
+            MakeRectangle( min, max,out r.Height, out r.Width); // creates an instance of MakeRectangle returns the min,max,hieght, and width
+            
+           
+
+            Console.WriteLine("Height: " + r.Height); // Displays the Height on screen
+            Console.WriteLine("Width: " + r.Width); // Displays the Width on Screen
+            Console.WriteLine("Area " + MathUtility.AreaFormula(r)); // Displays the area of the width and height on screen
+            Console.WriteLine("Area " + MathUtility.PerimeterFormula(r)); // displays the perimeter of the width and height on screen
+
         }
         public class Rectangle// Class for rectangle that holds the width and hieght 
         {
@@ -27,58 +32,38 @@ namespace classesMethods
 
             public Rectangle() // constructor for rectangle class that assigns the hieght and width a value 
             {
-                Height = 0; // value for hieght 
-                Width = 0; // value for width 
+                Height = 3; // value for hieght 
+                Width = 10; // value for width 
             }
         }
+        
         public class MathUtility // class for the forumla of area and perimeter
 
         {
-            public static void AreaFormula(int area)
+            public static int AreaFormula( Rectangle r) // Function for area accepts the parameter rectangle r to allow the use of variables width and height
             {
-                Rectangle r = new Rectangle();
-
-                area = r.Height * r.Width;
-               
+                
+               return r.Height * r.Width; // formula for area 
+                
             }
-            public static void PerimeterFormula(int perimeter)
-            {
-                Rectangle r = new Rectangle();
 
-                perimeter = 2 * (r.Height + r.Width);
+            public static int PerimeterFormula(Rectangle r) // Function for perimeter accepts the parameter rectangle r to allow the use of variables width and height
+            {
+                
+                return 2 * (r.Height + r.Width); // Formula for perimeter
+                
             }
         }
-        public static void MakeRectangle(int min, int max, out int Height, out int Width)
+        public static void MakeRectangle(int min, int max, out int Height, out int Width) // Function that accepts parameter min and max and gives out the width and height
         {
+            Rectangle r = new Rectangle(); // Instance that allows the use of the width and height 
            
-           Rectangle r = new Rectangle();
-            Height = r.Height;
-            Width = r.Width;
-            Height = random.Next(0, 100);
-            Width = random.Next(0, 100);
+            Height = r.Height; // Declares height from parameter
+            Width = r.Width; // Declares width from parameter
+            Height = random.Next(min, max); // allows the use of random number generator for Height that accepts min and max 
+            Width = random.Next(min, max);// allows the use of random number generator for Width that accepts min and max 
         }
-        
+
     }
 }
     
-
-
-/*
-random = new Random();
-           int a = 0;
-           int b = 0;
-
-           Console.WriteLine(a);
-           Console.WriteLine(b);
-
-           getRandomValues(out a, out b);
-
-           Console.WriteLine(a);
-           Console.WriteLine(b);
- static void getRandomValues(out int n1, out int n2
- n1 = random.Next(0, 100);
-            n2 = random.Next(0, 5);
- static int Add(int n1,int n2)
-return n1 + n2;
-   CSCS
-   */
